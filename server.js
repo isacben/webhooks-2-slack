@@ -31,6 +31,7 @@ app.post('/wh', (req, res) => {
         const mainMsg = await web.chat.postMessage({
           channel: 'webhooks',
           text: 'Webhook received!',
+          icon_emoji: ':robot_face:',
           blocks: [
             {
               type: 'section',
@@ -48,6 +49,7 @@ app.post('/wh', (req, res) => {
             channel: 'webhooks',
             thread_ts: msgid,
             text: 'Webhook body',
+            icon_emoji: ':robot_face:',
             blocks: [
               {
                 type: 'section',
