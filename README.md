@@ -1,6 +1,6 @@
 # Webhooks 2 Slack
 
-This is a Slack application. It listens to webhooks (specificaly, Rapyd webhoooks) and forwards the content of the webhook body to a Slack channel.
+This is a Slack application. It listens to webhooks (specifically, Rapyd webhoooks) and forwards the content of the webhook body to a Slack channel.
 
 The application posts a message with the name of the webhook (in this case, present in a field called "type" within a JSON object. The app then replays to that message with the body of the webhook. The headers of the webhooks are not sent to slack.
 
